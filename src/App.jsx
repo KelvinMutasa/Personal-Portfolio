@@ -1,7 +1,10 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
-import Nav from "./componets/Nav";
-import Hero from "./componets/Hero";
-import About from "./componets/About";
+import Nav from "./components/Nav";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Projects from "./components/projects";
+import Contact from './components/Contact';
+import Skill from './components/Skill';
 
 const App = () => {
   const { scrollY } = useScroll();
@@ -15,6 +18,9 @@ const App = () => {
       <Nav />
       <Hero />
       <About />
+      <Skill />
+      <Projects />
+      <Contact />
     </motion.div>
   );
 }

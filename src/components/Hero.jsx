@@ -4,7 +4,7 @@ import { FaFileDownload } from 'react-icons/fa';
 
 const Hero = () => {
   return (
-    <section id='home' className="flex items-center justify-between px-56 py-48">
+    <section id='home' className="flex items-center justify-between px-56 py-48 min-h-screen">
       <motion.div
         initial={{ x: 100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
