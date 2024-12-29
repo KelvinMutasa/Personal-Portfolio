@@ -105,28 +105,28 @@ const About = () => {
                                             <div className="relative flex items-start">
                                                 <div className="absolute left-[-1.25rem] top-0 w-2.5 h-2.5 bg-customBlue rounded-full"></div>
                                                 <div>
-                                                    <h4 className="text-xl font-semibold text-customBlue">Front-End Developer</h4>
-                                                    <p className="text-lg text-gray-700">Company A</p>
-                                                    <p className="text-lg text-gray-700">2021 - Present</p>
-                                                    <p className="text-gray-700">Developed and maintained the front-end of the company main product using React and Tailwind CSS.</p>
+                                                    <h4 className="text-xl font-semibold text-customBlue">Technical Support</h4>
+                                                    <p className="text-lg text-gray-700">AT&T Inc</p>
+                                                    <p className="text-lg text-gray-700">2024 - Present</p>
+                                                    <p className="text-gray-700">Providing technical support for the internet costomer </p>
                                                 </div>
                                             </div>
                                             <div className="relative flex items-start">
                                                 <div className="absolute left-[-1.25rem] top-0 w-2.5 h-2.5 bg-customBlue rounded-full"></div>
                                                 <div>
-                                                    <h4 className="text-xl font-semibold text-customBlue">Full-Stack Developer</h4>
-                                                    <p className="text-lg text-gray-700">Company B</p>
-                                                    <p className="text-lg text-gray-700">2019 - 2021</p>
-                                                    <p className="text-gray-700">Worked on full-stack development projects using the MERN stack, including building RESTful APIs and integrating with front-end applications.</p>
+                                                    <h4 className="text-xl font-semibold text-customBlue">Junior Developer</h4>
+                                                    <p className="text-lg text-gray-700">Strategic Informtion Systems</p>
+                                                    <p className="text-lg text-gray-700">2021 - 2023</p>
+                                                    <p className="text-gray-700">Worked on full-stack development projects using HCL notes and HCL Volt, including building RESTful APIs and integrating with front-end applications.</p>
                                                 </div>
                                             </div>
                                             <div className="relative flex items-start">
                                                 <div className="absolute left-[-1.25rem] top-0 w-2.5 h-2.5 bg-customBlue rounded-full"></div>
                                                 <div>
-                                                    <h4 className="text-xl font-semibold text-customBlue">Intern</h4>
-                                                    <p className="text-lg text-gray-700">Company C</p>
-                                                    <p className="text-lg text-gray-700">2018 - 2019</p>
-                                                    <p className="text-gray-700">Assisted in developing and testing web applications, gaining hands-on experience with various web technologies.</p>
+                                                    <h4 className="text-xl font-semibold text-customBlue">Frontend Developer/Customer Success Manager</h4>
+                                                    <p className="text-lg text-gray-700">NextUser</p>
+                                                    <p className="text-lg text-gray-700">2022</p>
+                                                    <p className="text-gray-700">Worked on data analysis and presentation on AI powered e-commerce workflows and developed company website using wordpress</p>
                                                 </div>
                                             </div>
                                         </div>

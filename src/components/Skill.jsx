@@ -37,13 +37,13 @@ const SkillCard = ({ skill, isVisible }) => {
             animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 50 }}
             transition={{ duration: 0.5 }}
         >
-            <div className="flex flex-col items-center bg-white shadow-lg rounded-lg p-4">
+            <div className="flex flex-col items-center shadow-lg rounded-lg p-4">
                 <CircularProgressbar
                     value={progress}
                     text={`${progress}%`}
                     styles={buildStyles({
                         textColor: '#000',
-                        pathColor: '#8bafd0',
+                        pathColor: '#1e2238',
                         trailColor: '#d6d6d6',
                     })}
                 />
