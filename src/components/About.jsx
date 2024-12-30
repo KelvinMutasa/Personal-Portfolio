@@ -30,9 +30,9 @@ const About = () => {
     return (
         <>
             <h2 className="text-4xl font-bold text-customBlue text-center">About Me</h2>
-            <section id="about" className="flex items-center justify-between px-56 py-20 min-h-screen" ref={sectionRef}>
+            <section id="about" className="flex flex-col md:flex-row items-center justify-between px-6 md:px-20 lg:px-40 py-20 md:py-32 lg:py-48 min-h-screen" ref={sectionRef}>
                 <div className="w-full md:w-1/2 flex flex-col space-y-4">
-                    <div className="flex space-x-4">
+                    <div className="flex space-x-4 justify-center md:justify-start">
                         <button
                             className={`px-4 py-2 rounded-full ${activeTab === 'tab1' ? 'bg-customBlue text-white' : 'bg-gray-200 text-gray-700'}`}
                             onClick={() => setActiveTab('tab1')}
@@ -136,16 +136,17 @@ const About = () => {
                         </AnimatePresence>
                     </div>
                 </div>
-                <div className=" bg-gradient-to-br from-splash to-transparent rounded-2xl">
+                            
+                <div className=" bg-gradient-to-br from-splash to-transparent rounded-2xl  flex justify-center md:justify-end mt-20 md:mt-5 ">
                     <motion.img 
-                        src={aboutImage} 
-                        alt="About" 
-                        className="w-80 h-auto object-cover rounded-2xl shadow-lg" 
-                        initial={{ rotate: 0 }}
-                        animate={{ rotate: isVisible ? 12 : 0 }}
-                        transition={{ duration: 1 }}
-                        whileHover={{ rotate: 0 }}
-                        />
+                    src={aboutImage} 
+                    alt="About" 
+                    className="h-auto object-cover rounded-2xl shadow-lg w-full max-w-72 md:max-w-md" 
+                    initial={{ rotate: 0 }}
+                    animate={{ rotate: isVisible ? 12 : 0 }}
+                    transition={{ duration: 1 }}
+                    whileHover={{ rotate: 0 }}
+                    />
                 </div>
             </section>
         </>

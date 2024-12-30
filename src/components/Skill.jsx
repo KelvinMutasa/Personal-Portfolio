@@ -32,7 +32,7 @@ const SkillCard = ({ skill, isVisible }) => {
 
     return (
         <motion.div
-            className="m-4 w-1/2 md:w-1/4 lg:w-1/6"
+            className="m-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 50 }}
             transition={{ duration: 0.5 }}
@@ -43,7 +43,7 @@ const SkillCard = ({ skill, isVisible }) => {
                     text={`${progress}%`}
                     styles={buildStyles({
                         textColor: '#000',
-                        pathColor: '#1e2238',
+                        pathColor: '#1e2238', // Use your custom blue color
                         trailColor: '#d6d6d6',
                     })}
                 />
@@ -79,9 +79,10 @@ const Skill = () => {
     }, []);
 
     return (
-        <section id='skills' className="skills-container py-20 min-h-screen" ref={sectionRef}>
+        <section id='skills' className="skills-container py-20 px-6 md:px-20 lg:px-40 min-h-screen" ref={sectionRef}>
+            <h2 className="text-4xl font-bold text-customBlue text-center mb-10">Skills</h2>
             <div className="mb-10">
-                <h2 className="text-4xl font-bold text-customBlue text-center mb-10">Frontend Skills</h2>
+                <h3 className="text-4xl font-semibold text-customBlue mb-10 text-center">Frontend</h3>
                 <div className="flex flex-wrap justify-center">
                     {skills.frontend.map((skill) => (
                         <SkillCard key={skill.name} skill={skill} isVisible={isVisible} />
@@ -89,7 +90,7 @@ const Skill = () => {
                 </div>
             </div>
             <div>
-                <h2 className="text-4xl font-bold text-customBlue text-center mb-10">Backend Skills</h2>
+                <h3 className="text-4xl font-semibold text-customBlue mb-10 text-center">Backend</h3>
                 <div className="flex flex-wrap justify-center">
                     {skills.backend.map((skill) => (
                         <SkillCard key={skill.name} skill={skill} isVisible={isVisible} />

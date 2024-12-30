@@ -1,78 +1,30 @@
-import { useState } from 'react';
+import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsappSquare } from 'react-icons/fa';
 
 const Contact = () => {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: ''
-    });
-
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-            ...formData,
-            [name]: value
-        });
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Handle form submission logic here
-        console.log('Form data submitted:', formData);
-    };
-
     return (
-        <section id="contact" className="contact bg-bgColor py-20 px-6 md:px-56 min-h-screen">
-            <h2 className="text-4xl font-bold text-customBlue text-center mb-10">Contact Us</h2>
-            <div className="contact-details text-center mb-10">
-                <p className="text-lg text-gray-700">Email: example@example.com</p>
-                <p className="text-lg text-gray-700">Phone: +123 456 7890</p>
-                <p className="text-lg text-gray-700">Address: 123 Main St, Anytown, USA</p>
+        <footer id="contact" className="bg-customBlue text-white py-10 px-6 md:px-56">
+            <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+                <div className="contact-details text-center md:text-left space-y-4 md:space-y-0 md:space-x-10">
+                    <p className="text-lg">Email: mutasakelvin@gmail.com</p>
+                    <p className="text-lg">Phone: +420 733 69 2266</p>
+                    <p className="text-lg">Location: Brno, Czechia</p>
+                </div>
+                <div className="flex space-x-4">
+                    <a href="https://github.com/KelvinMutasa" target="_blank" rel="noopener noreferrer" className='hover:text-slate-400'>
+                        <FaGithub />
+                    </a>
+                    <a href="https://linkedin.com/kelvin-mutasa-095b05b0" target="_blank" rel="noopener noreferrer" className='hover:text-slate-400'>
+                        <FaLinkedin />
+                    </a>
+                    <a href="mailto:mutasakelvin@gmail.com" target="_blank" rel="noopener noreferrer" className='hover:text-slate-400'>
+                        <FaEnvelope />
+                    </a>
+                    <a href="https://wa.me/420733692266" target="_blank" rel="noopener noreferrer" className='hover:text-slate-400'>
+                        <FaWhatsappSquare />
+                    </a>
+                </div>
             </div>
-            <form onSubmit={handleSubmit} className="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
-                <div className="mb-4">
-                    <label htmlFor="name" className="block text-lg font-medium text-gray-700">Name:</label>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                        className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-customBlue focus:border-customBlue"
-                    />
-                </div>
-                <div className="mb-4">
-                    <label htmlFor="email" className="block text-lg font-medium text-gray-700">Email:</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                        className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-customBlue focus:border-customBlue"
-                    />
-                </div>
-                <div className="mb-4">
-                    <label htmlFor="message" className="block text-lg font-medium text-gray-700">Message:</label>
-                    <textarea
-                        id="message"
-                        name="message"
-                        value={formData.message}
-                        onChange={handleChange}
-                        required
-                        className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-customBlue focus:border-customBlue"
-                    ></textarea>
-                </div>
-                <button
-                    type="submit"
-                    className="w-full px-4 py-2 bg-customBlue text-white font-semibold rounded-md shadow-sm hover:bg-customBlue-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-customBlue"
-                >
-                    Submit
-                </button>
-            </form>
-        </section>
+        </footer>
     );
 };
 
