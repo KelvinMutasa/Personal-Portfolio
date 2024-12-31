@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
  
 .active-link {
     @apply bg-white text-customBlue px-3 rounded-full shadow-md transition duration-300 ease-in-out;
