@@ -3,6 +3,9 @@ import { motion } from 'framer-motion';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import PropTypes from 'prop-types';
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact,FaNodeJs } from 'react-icons/fa';
+import { SiTailwindcss,SiExpress,SiMongodb,SiMongoose} from 'react-icons/si';
+
 
 const skills = {
     frontend: [
@@ -32,7 +35,7 @@ const SkillCard = ({ skill, isVisible }) => {
 
     return (
         <motion.div
-            className="m-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6"
+            className="m-4 w-full sm:w-1/2 md:w-1/6 lg:w-1/4 xl:w-1/6"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 50 }}
             transition={{ duration: 0.5 }}
@@ -43,7 +46,7 @@ const SkillCard = ({ skill, isVisible }) => {
                     text={`${progress}%`}
                     styles={buildStyles({
                         textColor: '#000',
-                        pathColor: '#1e2238', // Use your custom blue color
+                        pathColor: '#1e2238', 
                         trailColor: '#d6d6d6',
                     })}
                 />
@@ -84,6 +87,15 @@ const Skill = () => {
             <h2 className="text-4xl font-bold text-customBlue text-center mb-10">Skills</h2>
             <div className="mb-10">
                 <h3 className="text-4xl font-semibold text-customBlue mb-10 text-center">Frontend</h3>
+                <div className="flex flex-wrap justify-center mb-10">
+                    <div className="flex space-x-8">
+                        <FaHtml5 className="text-4xl text-orange-600" />
+                        <FaCss3Alt className="text-4xl text-blue-600" />
+                        <FaJsSquare className="text-4xl text-yellow-500" />
+                        <FaReact className="text-4xl text-blue-400" />
+                        <SiTailwindcss className="text-4xl text-teal-400" />
+                    </div>
+                </div>
                 <div className="flex flex-wrap justify-center">
                     {skills.frontend.map((skill) => (
                         <SkillCard key={skill.name} skill={skill} isVisible={isVisible} />
@@ -92,6 +104,14 @@ const Skill = () => {
             </div>
             <div>
                 <h3 className="text-4xl font-semibold text-customBlue mb-10 text-center">Backend</h3>
+                <div className="flex flex-wrap justify-center mb-10">
+                    <div className="flex space-x-8">
+                        <FaNodeJs className="text-4xl text-green-500" />
+                        <SiExpress className="text-4xl text-gray-500" />
+                        <SiMongodb className="text-4xl text-green-600" />
+                        <SiMongoose className="text-4xl text-green-400" />
+                    </div>
+                </div>
                 <div className="flex flex-wrap justify-center">
                     {skills.backend.map((skill) => (
                         <SkillCard key={skill.name} skill={skill} isVisible={isVisible} />
