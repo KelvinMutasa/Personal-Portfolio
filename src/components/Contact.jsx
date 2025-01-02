@@ -2,14 +2,14 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsappSquare } from 'react-icons/
 
 const Contact = () => {
     return (
-        <footer id="contact" className="bg-customBlue text-white py-10 px-6 md:px-56">
-            <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
-                <div className="contact-details text-center md:text-left space-y-4 md:space-y-0 md:space-x-10">
-                    <p className="text-lg">Email: mutasakelvin@gmail.com</p>
-                    <p className="text-lg">Phone: +420 733 69 2266</p>
-                    <p className="text-lg">Location: Brno, Czechia</p>
+        <footer id="contact" className="bg-customBlue text-white py-10 px-6 md:px-56 ">
+            <div className="flex flex-col md:flex-col justify-between items-center space-y-6 md:space-y-0 ">
+                <div className="contact-details text-center md:text-left space-y-4 md:space-y-0 md:space-x-10 ">
+                    <p className="text-lg md:text-2xl">Email: mutasakelvin@gmail.com</p>
+                    <p className="text-lg md:text-2xl">Phone: +420 733 69 2266</p>
+                    <p className="text-lg md:text-2xl">Location: Brno, Czechia</p>
                 </div>
-                <div className="flex space-x-4">
+                <div className="flex space-x-4 md:text-2xl">
                     <a href="https://github.com/KelvinMutasa" target="_blank" rel="noopener noreferrer" className='hover:text-slate-400'>
                         <FaGithub />
                     </a>

@@ -35,7 +35,7 @@ const SkillCard = ({ skill, isVisible }) => {
 
     return (
         <motion.div
-            className="m-4 w-full sm:w-1/2 md:w-1/6 lg:w-1/4 xl:w-1/6"
+            className="m-4 w-full sm:w-1/2 md:w-5/12 lg:w-1/4 xl:w-1/6  "
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 50 }}
             transition={{ duration: 0.5 }}
@@ -50,7 +50,7 @@ const SkillCard = ({ skill, isVisible }) => {
                         trailColor: '#d6d6d6',
                     })}
                 />
-                <p className="text-lg font-semibold mt-2">{skill.name}</p>
+                <p className="text-lg font-semibold mt-2 md:text-2xl">{skill.name}</p>
             </div>
         </motion.div>
     );
@@ -84,16 +84,16 @@ const Skill = () => {
 
     return (
         <section id='skills' className="skills-container py-20 px-6 md:px-20 lg:px-40 min-h-screen" ref={sectionRef}>
-            <h2 className="text-4xl font-bold text-customBlue text-center mb-10">Skills</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-customBlue text-center mb-10">Skills</h2>
             <div className="mb-10">
-                <h3 className="text-4xl font-semibold text-customBlue mb-10 text-center">Frontend</h3>
+                <h3 className="text-4xl md:text-5xl font-semibold text-customBlue mb-10 text-center">Frontend</h3>
                 <div className="flex flex-wrap justify-center mb-10">
-                    <div className="flex space-x-8">
-                        <FaHtml5 className="text-4xl text-orange-600" />
-                        <FaCss3Alt className="text-4xl text-blue-600" />
-                        <FaJsSquare className="text-4xl text-yellow-500" />
-                        <FaReact className="text-4xl text-blue-400" />
-                        <SiTailwindcss className="text-4xl text-teal-400" />
+                    <div className="flex space-x-8 text-4xl md:text-5xl">
+                        <FaHtml5 className=" text-orange-600" />
+                        <FaCss3Alt className=" text-blue-600" />
+                        <FaJsSquare className=" text-yellow-500" />
+                        <FaReact className=" text-blue-400" />
+                        <SiTailwindcss className=" text-teal-400" />
                     </div>
                 </div>
                 <div className="flex flex-wrap justify-center">
@@ -103,13 +103,13 @@ const Skill = () => {
                 </div>
             </div>
             <div>
-                <h3 className="text-4xl font-semibold text-customBlue mb-10 text-center">Backend</h3>
-                <div className="flex flex-wrap justify-center mb-10">
+                <h3 className="text-4xl md:text-5xl font-semibold text-customBlue mb-10 text-center">Backend</h3>
+                <div className="flex flex-wrap justify-center text-4xl md:text-5xl mb-10">
                     <div className="flex space-x-8">
-                        <FaNodeJs className="text-4xl text-green-500" />
-                        <SiExpress className="text-4xl text-gray-500" />
-                        <SiMongodb className="text-4xl text-green-600" />
-                        <SiMongoose className="text-4xl text-green-400" />
+                        <FaNodeJs className=" text-green-500" />
+                        <SiExpress className=" text-gray-500" />
+                        <SiMongodb className=" text-green-600" />
+                        <SiMongoose className=" text-green-400" />
                     </div>
                 </div>
                 <div className="flex flex-wrap justify-center">

@@ -35,7 +35,7 @@ const About = () => {
             <section id="about" className="px-6 md:px-20 lg:px-20 py-20 lg:py-32 min-h-screen" ref={sectionRef}>
                 <h2 className="text-4xl md:text-5xl font-bold text-customBlue text-center">About Me</h2>
                  <div className='flex flex-col lg:flex-row items-center justify-between py-10'>     
-                        <div className="w-full lg:w-1/2 flex flex-col space-y-4">
+                        <div className="w-full lg:w-1/2 flex flex-col space-y-4 md:text-2xl ">
                             <div className="flex space-x-4 justify-center lg:justify-start">
                                 <button
                                     className={`px-4 py-2 rounded-full ${activeTab === 'tab1' ? 'bg-customBlue text-white' : 'bg-gray-200 text-gray-700'}`}
