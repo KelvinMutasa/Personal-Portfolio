@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 
 const ProjectCard = ({ title, description }) => {
     return (
-        <div className="project-card bg-white shadow-lg rounded-lg p-8 m-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
+        <div className="project-card bg-white shadow-lg rounded-lg p-8 m-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/3">
             <h3 className="text-3xl font-bold mb-4">{title}</h3>
             <p className="text-gray-700 mb-6">{description}</p>
-            <div className="buttons flex space-x-4">
+            <div className="buttons flex space-x-4 md:flex-col md:space-y-4 md:space-x-0 md:items-center">
                 <button className="px-6 py-3 bg-customBlue text-white rounded-full">View</button>
                 <button className="px-6 py-3 bg-gray-200 text-gray-700 rounded-full">Source</button>
             </div>
