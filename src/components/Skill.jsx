@@ -88,34 +88,34 @@ const Skill = () => {
             <div className="mb-10">
                 <h3 className="text-4xl md:text-5xl font-semibold text-customBlue mb-10 text-center">Frontend</h3>
                 <div className="flex flex-wrap justify-center mb-10">
-                    <div className="flex space-x-8 text-4xl md:text-5xl">
-                        <FaHtml5 className=" text-orange-600" />
-                        <FaCss3Alt className=" text-blue-600" />
-                        <FaJsSquare className=" text-yellow-500" />
-                        <FaReact className=" text-blue-400" />
-                        <SiTailwindcss className=" text-teal-400" />
+                    <div className="flex space-x-8 text-4xl md:text-5xl lg:text-7xl">
+                        <FaHtml5 className=" text-orange-600 shadow-lg rounded-lg " />
+                        <FaCss3Alt className=" text-blue-600 shadow-lg rounded-lg " />
+                        <FaJsSquare className=" text-yellow-500 shadow-lg rounded-lg " />
+                        <FaReact className=" text-blue-400 shadow-lg rounded-lg " />
+                        <SiTailwindcss className=" text-teal-400 shadow-lg rounded-lg " />
                     </div>
-                </div>
-                <div className="flex flex-wrap justify-center">
+                    <div className="flex flex-wrap justify-center py-10">
                     {skills.frontend.map((skill) => (
                         <SkillCard key={skill.name} skill={skill} isVisible={isVisible} />
                     ))}
+                    </div>
                 </div>
             </div>
             <div>
                 <h3 className="text-4xl md:text-5xl font-semibold text-customBlue mb-10 text-center">Backend</h3>
-                <div className="flex flex-wrap justify-center text-4xl md:text-5xl mb-10">
-                    <div className="flex space-x-8">
-                        <FaNodeJs className=" text-green-500" />
-                        <SiExpress className=" text-gray-500" />
-                        <SiMongodb className=" text-green-600" />
-                        <SiMongoose className=" text-green-400" />
+                <div className="flex flex-wrap justify-center mb-10">
+                    <div className="flex space-x-8 text-4xl md:text-5xl lg:text-7xl">
+                        <FaNodeJs className=" text-green-500 shadow-lg rounded-lg " />
+                        <SiExpress className=" text-gray-500 shadow-lg rounded-lg " />
+                        <SiMongodb className=" text-green-600 shadow-lg rounded-lg " />
+                        <SiMongoose className=" text-green-400 shadow-lg rounded-lg " />
                     </div>
-                </div>
-                <div className="flex flex-wrap justify-center">
+                    <div className="flex flex-wrap justify-center py-10">
                     {skills.backend.map((skill) => (
                         <SkillCard key={skill.name} skill={skill} isVisible={isVisible} />
                     ))}
+                    </div>
                 </div>
             </div>
         </section>

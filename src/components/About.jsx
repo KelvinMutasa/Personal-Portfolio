@@ -32,9 +32,9 @@ const About = () => {
     return (
         <>
             
-            <section id="about" className="px-6 md:px-20 lg:px-20 py-20 lg:py-32 min-h-screen" ref={sectionRef}>
+            <section id="about" className="px-6 md:px-20 lg:px-40 py-20 lg:py-32 2xl:px-40 2xl:py-0 min-h-screen" ref={sectionRef}>
                 <h2 className="text-4xl md:text-5xl font-bold text-customBlue text-center">About Me</h2>
-                 <div className='flex flex-col lg:flex-row items-center justify-between py-20'>     
+                 <div className='flex flex-col lg:flex-row items-center justify-between py-20 2xl:py-40'>     
                         <div className="w-full lg:w-1/2 flex flex-col space-y-4">
                             <div className="flex space-x-4 justify-center md:text-xl lg:justify-start">
                                 <button
@@ -68,11 +68,16 @@ const About = () => {
                                             animate={{ opacity: 1, y: 0 }}
                                             exit={{ opacity: 0, y: -10 }}
                                             transition={{ duration: 0.3 }}
-                                            className="bg-transparent p-6 rounded-lg shadow-md"
+                                            className="bg-transparent p-6 rounded-lg shadow-md md:text-xl"
                                         >
-                                            <h3 className="text-2xl md:text-3xl font-bold text-customBlue">Bachelor of Technology</h3>
-                                            <p className="text-lg md:text-xl text-gray-700">Harare Institute of Technology</p>
-                                            <p className="text-lg md:text-xl text-gray-700">2015 - 2020</p>
+                                            <p>
+                                                I am a full stack MERN developer with a strong foundation in web development and a passion for continuous learning.
+                                                Seeking opportunities to contribute to dynamic teams and enhance my skills through hands-on projects and collaboration.
+                                                I have experience in web development languages and technologies.
+                                                I also firmly believe in software engineering best practices particularly Argile development using SCRUM framework in a world of continuous and abrupt changes.
+                                                My strong passion is user experience which drove me into frontend development with HTML, CSS and javascript in the early days of my career.
+                                                Along the way I have taken up React and also have an appreciation of Node and MongoDB which I acquired through freelance development jobs.
+                                            </p>
                                         </motion.div>
                                     )}
                                     {activeTab === 'tab2' && (
@@ -84,14 +89,9 @@ const About = () => {
                                             transition={{ duration: 0.3 }}
                                             className="bg-transparent p-6 rounded-lg shadow-md md:text-xl"
                                         >
-                                            <p>
-                                                I am a full stack MERN developer with a strong foundation in web development and a passion for continuous learning.
-                                                Seeking opportunities to contribute to dynamic teams and enhance my skills through hands-on projects and collaboration.
-                                                I have experience in web development languages and technologies.
-                                                I also firmly believe in software engineering best practices particularly Argile development using SCRUM framework in a world of continuous and abrupt changes.
-                                                My strong passion is user experience which drove me into frontend development with HTML, CSS and javascript in the early days of my career.
-                                                Along the way I have taken up React and also have an appreciation of Node and MongoDB which I acquired through freelance development jobs.
-                                            </p>
+                                            <h3 className="text-2xl md:text-3xl font-bold text-customBlue">Bachelor of Technology</h3>
+                                            <p className="text-lg md:text-xl text-gray-700">Harare Institute of Technology</p>
+                                            <p className="text-lg md:text-xl text-gray-700">2015 - 2020</p>            
                                         </motion.div>
                                     )}
                                     {activeTab === 'tab3' && (
@@ -145,7 +145,7 @@ const About = () => {
                             <motion.img 
                             src={aboutImage} 
                             alt="About" 
-                            className="h-auto object-cover rounded-2xl shadow-lg w-full max-w-72 md:max-w-96 lg:max-w-72" 
+                            className="h-auto object-cover rounded-2xl shadow-lg w-full max-w-72 md:max-w-96" 
                             initial={{ rotate: 0 }}
                             animate={{ rotate: isVisible ? 12 : 0 }}
                             transition={{ duration: 1 }}

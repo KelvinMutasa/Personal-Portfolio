@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsappSquare } from 'react-icons/
 const Contact = () => {
     return (
         <footer id="contact" className="bg-customBlue text-white py-10 px-6 md:px-56 ">
-            <div className="flex flex-col md:flex-col justify-between items-center space-y-6 md:space-y-0 ">
+            <div className="flex flex-col lg:flex-row lg:justify-around justify-between items-center space-y-6 md:space-y-0 ">
                 <div className="contact-details text-center md:text-left space-y-4 md:space-y-0 md:space-x-10 ">
                     <p className="text-lg md:text-xl">Email: mutasakelvin@gmail.com</p>
                     <p className="text-lg md:text-xl">Phone: +420 733 69 2266</p>

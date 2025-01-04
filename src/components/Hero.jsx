@@ -4,14 +4,14 @@ import { FaFileDownload } from 'react-icons/fa';
 
 const Hero = () => {
   return (
-    <section id='home' className="flex flex-col lg:flex-row items-center justify-between px-6 md:px-20 lg:px-24  py-20 p lg:py-40 min-h-screen">
+    <section id='home' className="flex flex-col lg:flex-row items-center justify-between px-6 md:px-20 lg:px-40 py-20 2xl:py-60 min-h-screen">
       <motion.div
         initial={{ x: 100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, ease: 'easeOut' }}
         className="mb-10 lg:mb-0 md:w-5/6"
       >
-        <img src={heroImage} alt="Hero" className="w-full lg:w-8/12 h-auto object-cover rounded-2xl bg-gradient-to-t from-splash via-40%" />
+        <img src={heroImage} alt="Hero" className="w-full lg:w-7/12 h-auto object-cover rounded-2xl bg-gradient-to-t from-splash via-40%" />
       </motion.div>
       <motion.div
         initial={{ x: -100, opacity: 0 }}
